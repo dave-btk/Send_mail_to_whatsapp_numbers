@@ -35,7 +35,7 @@ def twilio(request):
 
         message = client.messages.create(
             from_='whatsapp:+14155238886',
-            body='Your {} code is {}'.format("MR.", "675894"),
+            body='Your {} code is {}'.format("MR.", messages),
             to='whatsapp:+91{}'.format(number)
         )
 

@@ -29,7 +29,7 @@
       <form action="{% url 'twilio' %}" method="POST">
         {% csrf_token %}
         <input type="number" name="number" placeholder="Enter a valid number" max="9999999999" class="form-control"><br>
-
+        <input type="text" name="message" placeholder="Enter message here" class="form-control"><br>
         <input type="submit" value="SEND MESSAGE" class="btn btn-outline-warning">
       </form>
     </div>
